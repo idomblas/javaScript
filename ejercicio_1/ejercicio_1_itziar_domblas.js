@@ -1,5 +1,9 @@
-function isLeapYear(year) {
-  if ((year % 4 === 0 && year % 100 !== 0) || year % 400 === 0) {
+function isLeapYear(yearString) {
+  if (typeof yearString !== "string") return false;
+  if (
+    (yearString % 4 === 0 && yearString % 100 !== 0) ||
+    yearString % 400 === 0
+  ) {
     return true;
   } else {
     return false;
