@@ -1,4 +1,4 @@
-const SuperArray = require("./ejercicio_2_itziar_domblas");
+const { SuperArray } = require("./ejercicio_2_itziar_domblas");
 
 describe("SuperArray.snail()", () => {
   test("Ejemplo del enunciado (5x4)", () => {

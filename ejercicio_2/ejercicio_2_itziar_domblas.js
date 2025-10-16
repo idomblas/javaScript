@@ -3,7 +3,6 @@ class SuperArray {
     this.nums = nums;
   }
   snail(rowsCount, colsCount) {
-    // Validaciones del input array
     if (
       !Array.isArray(this.nums) ||
       this.nums.length < 0 ||
@@ -46,4 +45,4 @@ class SuperArray {
   }
 }
 
-module.exports = SuperArray;
+module.exports = { SuperArray };
