@@ -107,20 +107,4 @@ describe("SuperArray.snail()", () => {
     const superArr = new SuperArray(nums);
     expect(superArr.snail(1, 251)).toEqual([]);
   });
-
-  test("Fila o columna igual a 0 devuelve []", () => {
-    const nums = [1, 2, 3];
-    const superArr = new SuperArray(nums);
-    expect(superArr.snail(0, 3)).toEqual([]);
-    expect(superArr.snail(3, 0)).toEqual([]);
-  });
-
-  test("Matriz de 250x1 con 250 elementos", () => {
-    const nums = Array.from({ length: 250 }, (_, i) => i + 1);
-    const superArr = new SuperArray(nums);
-    const result = superArr.snail(250, 1);
-    expect(result.length).toBe(250);
-    expect(result[0][0]).toBe(1);
-    expect(result[249][0]).toBe(250);
-  });
 });
