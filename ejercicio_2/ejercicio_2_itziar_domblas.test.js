@@ -49,7 +49,7 @@ describe("SuperArray.snail()", () => {
   test("Entrada inválida devuelve []", () => {
     const nums = [1, 2, 3, 4, 5];
     const superArr = new SuperArray(nums);
-    const result = superArr.snail(2, 3); // 2x3 = 6 ≠ 5
+    const result = superArr.snail(2, 3);
     expect(result).toEqual([]);
   });
 
@@ -115,7 +115,6 @@ describe("SuperArray.snail()", () => {
     expect(superArr.snail(3, 0)).toEqual([]);
   });
 
-  // --- Test válido en el límite máximo ---
   test("Matriz de 250x1 con 250 elementos", () => {
     const nums = Array.from({ length: 250 }, (_, i) => i + 1);
     const superArr = new SuperArray(nums);
