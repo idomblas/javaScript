@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <script defer src="fetch.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio Fetch</title>
+    <style>
+      /* Estilo básico para mejor visualización */
+      body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+      }
+      .controls {
+        margin-bottom: 20px;
+        padding: 15px;
+        border: 1px solid #0056b3;
+        border-radius: 5px;
+      }
+      button {
+        padding: 10px 15px;
+        margin-right: 10px;
+        cursor: pointer;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 3px;
+      }
+      button:hover {
+        background-color: #0056b3;
+      }
+      #article-number {
+        width: 50px;
+        padding: 8px;
+        margin-left: 5px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+      }
+      #output {
+        border: 1px solid #ddd;
+        padding: 15px;
+        margin-top: 20px;
+        background-color: #f9f9f9;
+        min-height: 100px;
+      }
+      .article {
+        border-bottom: 1px dashed #ccc;
+        padding: 10px 0;
+      }
+      .article h3 {
+        color: #333;
+        margin-top: 5px;
+      }
+      .status-log {
+        color: green;
+        font-weight: bold;
+        margin-top: 10px;
+      }
+      .error {
+        color: red;
+        font-weight: bold;
+      }
+      .list-container {
+        max-height: 500px;
+        overflow-y: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Artículos con Fetch</h1>
+
+    <div class="controls">
+      <button id="btn-article-1">Artículo 1</button>
+
+      <label for="article-number">Número de Artículo:</label>
+      <input type="number" id="article-number" value="5" min="1" max="100" />
+      <button id="btn-article-n">Artículo 2</button>
+
+      <button id="btn-all-articles">Todos los Artículos</button>
+    </div>
+
+    <h2>Resultados:</h2>
+    <div id="output">
+      <p>Presiona un botón para cargar los datos.</p>
+    </div>
+  </body>
+</html>
